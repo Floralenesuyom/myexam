@@ -1,0 +1,56 @@
+<div class="container border mt-3 p-3">
+
+    <div class="h5"> Set A - 5 Points Each Question</div>
+
+    <ol>
+        <li>
+            <p><strong>How to create reactive forms?</strong></p>
+            <p><strong>Answer: </strong> To create reactive forms in Angular, import ReactiveFormsModule in your module, define a FormGroup in your component, and bind it to the template using the [formGroup] directive.</p>
+        </li>
+        <li>
+            <p><strong>How to add built-in validation for email in reactive form?</strong></p>
+            <p><strong>Answer: </strong>Use the Validators.email validator in the FormControl definition. <br> Example: <br>
+
+                email: new FormControl('', [Validators.required, Validators.email]) </p>
+        </li>
+        <li>
+            <p><strong>How to add built-in validation for required fields in reactive form?</strong></p>
+            <p><strong>Answer: </strong>Use the Validators.required validator in the FormControl definition. <br> Example: <br>
+                name: new FormControl('', Validators.required) </p>
+        </li>
+        <li>
+            <p><strong>How to add regex validation for reactive forms?</strong></p>
+            <p><strong>Answer: </strong>Use Validators.pattern with the desired regex pattern in the FormControl. <br>Example: <br>
+                
+                mobile: new FormControl('', Validators.pattern('^[0-9]&#123;10&#125;$')) 
+                </p>
+        </li>
+        <li>
+            <p><strong>How to generate routing?</strong></p>
+            <p><strong>Answer: </strong>Use the Angular CLI command:
+                ng generate module app-routing --flat --module=app </p>
+        </li>
+        <li>
+            <p><strong>How to configure routes with parameters?</strong></p>
+            <p><strong>Answer: </strong>Define routes with parameters in the Routes array using the path property. <br>Example: <br>
+                &#123; path: 'user/:id', component: UserComponent &#125; 
+                </p>
+        </li>
+        <li>
+            <p><strong>What is DebounceTime in RxJS?</strong></p>
+            <p><strong>Answer: </strong>debounceTime is an RxJS operator that delays the emission of values from an observable by a specified time. It is commonly used to reduce the frequency of events like user input.</p>
+        </li>
+        <li>
+            <p><strong>What is pipe operator?</strong></p>
+            <p><strong>Answer: </strong>The pipe operator in RxJS is used to chain multiple operators together to transform or filter observable data.</p>
+        </li>
+        <li>
+            <p><strong>What is distinctUntilChanged operator?</strong></p>
+            <p><strong>Answer: </strong>distinctUntilChanged is an RxJS operator that prevents the emission of duplicate consecutive values from an observable.</p>
+        </li>
+        <li>
+            <p><strong>What is filter operator in RxJS?</strong></p>
+            <p><strong>Answer: </strong>The filter operator is used to emit values from an observable that satisfy a specified condition.</p>
+        </li>
+    </ol>
+</div>
